@@ -1,8 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental", "CarRental\CarRental.csproj", "{B0CA22C8-B3EF-4A36-9235-D0EE12356BEA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental.Test", "CarRental.Test\CarRental.Test.csproj", "{AFEBFF0C-7A2B-405B-AFBE-87CBD29961CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{498639AF-24E6-49ED-AA8A-7621E8C023A7}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +26,8 @@ Global
 		{AFEBFF0C-7A2B-405B-AFBE-87CBD29961CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFEBFF0C-7A2B-405B-AFBE-87CBD29961CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFEBFF0C-7A2B-405B-AFBE-87CBD29961CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

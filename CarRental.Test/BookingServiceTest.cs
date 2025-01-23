@@ -4,9 +4,33 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CarRental.Test;
 
+/// <summary>
+/// # PenVing Code Review
+/// 
+/// ## Analys
+/// Jag saknar test för användningsfall "A2. Registrering av återlämning av bil" som anges för uppgiften.
+/// Vad är anledningen till att du valt att inte skriva test för detta?
+/// ## Betänkande
+/// 
+/// ## Fördjupande
+/// 
+/// </summary>
+
 [TestClass]
 public class BookingServiceTest
 {
+    /// <summary>
+    /// # PenVing Code Review
+    /// 
+    /// ## Analys
+    /// Här förmodar jag att du av ser att bevisa användningsfall "A1.Registrering av uttag av bil" för uppgiften.
+    /// Metoden för att registrera bokning <see cref="BookingService.CreateBookingAsync"/> avkräver mer information än vad som anges i användningsfallet.
+    /// Detta på grund av att du har valt att introducera konceptet om att ett fordon "Car" är en individ som bär sin mätarställning.
+    /// 
+    /// ## Betänkande
+    /// Jag hade velat se en mer direkt namngiven koppling till användningsfallet i övningen.
+    /// ## Fördjupande
+    /// </summary>
     [TestMethod]
     public async Task CreateBooking__Success__BasicInformationAdded()
     {
