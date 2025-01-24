@@ -1,5 +1,5 @@
 ﻿# Car Rental Service - Candidate Work Assignment
-A simple Car rental app to demo some concepts and skills.
+A simple Car rental app to demo some concepts and skills. 
 
 # Penving feedback
 
