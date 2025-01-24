@@ -1,7 +1,22 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using CarRental.Models.Car;
+
+using System.ComponentModel.DataAnnotations;
 
 namespace CarRental.Models;
+/// <summary>
+/// # PenVing Code Review
+/// 
+/// ## Analys
+/// Här ansvarar klassen för både affärslogik och persistering på samma sätt som för <see cref="Car"/>
+/// Affärslogik som potentiellt metoden <see cref="Return"/> borde hantera kan lätt sättas ur spel pga publikt tillgängliga property setters <see cref="MileageReturn"/> och <see cref="ReturnTime"/>
+/// 
+/// ## Betänkande
+/// <see cref="PersonalIdentificationNumber"/> är av typen <cref="int"/> vilket kan vara en begränsning om vi vill ha stöd för internationella kunder och slutar att funka  
+/// Int32.MaxValue = 2147483647, vilket gör att det är svårt att få plats med ett personnummer som är 12 siffror långt.
 
+/// 
+/// ## Fördjupande
+/// </summary>
 public sealed class Booking
 {
     // Parameterless constructor for EF Core

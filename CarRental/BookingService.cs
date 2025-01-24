@@ -1,5 +1,6 @@
 ﻿using CarRental.Data;
 using CarRental.Models;
+using CarRental.Models.Car;
 
 namespace CarRental;
 
